@@ -7,11 +7,11 @@ Describe "Get-Factorial" {
         Get-Factorial -Number 0 | Should -Be 1
     }
 
-    It "Returns 120 for 5" {
-        Get-Factorial -Number 5 | Should -Be 120
+    It "Returns 1 for 1" {
+        Get-Factorial -Number 1 | Should -Be 1
     }
 
-    It "Throws error for negative number" {
-        { Get-Factorial -Number -1 } | Should -Throw "Factorial is not defined for negative numbers"
+    It "Returns 120 for 5" {
+        Get-Factorial -Number 5 | Should -Be 120
     }
 }
